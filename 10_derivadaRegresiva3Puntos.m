@@ -19,11 +19,9 @@ for i = 1 : length(array_x)
     
     %% Calculamos el valor de la derivada numericamente    
     campo01 = evaluarPolinomio((x - (2 * incremento)), array_coeficientes, grado);
-    campo02 = evaluarPolinomio((x - incremento), array_coeficientes, grado);
-    campo02 = 4 * campo02;
-    campo03 = evaluarPolinomio(x, array_coeficientes, grado);
-    campo03 = 3 * campo03;    
-    
+    campo02 = 4 * evaluarPolinomio((x - incremento), array_coeficientes, grado);
+    campo03 = 3 * evaluarPolinomio(x, array_coeficientes, grado);
+       
     formula = (campo01 - campo02 + campo03) / (2 * incremento);
     
     array_resultado(i, 1) = x;
