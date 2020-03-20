@@ -2,10 +2,6 @@ clear, clc, clearvars;
 % Newton Diferencias divididas V2
 %%
 
-% valores_x = [1 2 4 8];
-% valores_y = [5 8 4 2];
-% punto_x = 6; % -2.381
-
 valores_x = [1 1.5 1.9 2.2 2.4];
 valores_y = [0.33 0.85 1.13 1.31 1.41];
 punto_x = 2; % 1.1928
