@@ -12,6 +12,7 @@ X = X0;
 iteracion=0;
 Norma=1;
 fprintf(' K X(1) X(2) X(3) X(4) Norma\n')
+
 while Norma > 0.0001
     iteracion=iteracion+1; 
     fprintf(' %2d ',iteracion)
@@ -25,12 +26,13 @@ while Norma > 0.0001
         X(i)=(b(i)-suma)/A(i,i); 
         fprintf('%10.4f',X(i))
     end
+
     Norma=norm(X0-X); 
     fprintf('%10.4f\n',Norma)
     X0=X;
     
     if iteracion > 17
-        disp('No se alcanz� la convergencia')
+        disp('No se alcanzo la convergencia')
         break
     end
 end
