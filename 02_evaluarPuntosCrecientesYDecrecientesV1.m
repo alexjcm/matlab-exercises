@@ -1,5 +1,9 @@
 clc, clear;
+%% Verifica en que rango de puntos una función es creciente o decreciente
+%%
+
 syms x;
+
 grado = input('Ingrese grado del polinomio: ');
 polinom = 0;
 for i = 0:grado

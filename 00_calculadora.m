@@ -1,23 +1,26 @@
 clc, clear;
+% Calculadora bÃ¡sica
+
 seguir_operando ="true";
-disp("*** CALCULADORA BÁSICA ***");
+
+disp("*** CALCULADORA BASICA ***");
 
 while seguir_operando=="true"
-    num_a = input('Ingrese número A: ');
-    num_b = input('Ingrese número B: ');
+    num_a = input('Ingrese numero A: ');
+    num_b = input('Ingrese numero B: ');
     % Las comillas dobles indican que la matriz es tipo strong, mientras
     % que comillas simples indican que es matriz tipo char. Puede convertir 
-    % matriz de cadenas a una de caracteres utilizar la función char().    
+    % matriz de cadenas a una de caracteres utilizar la funciï¿½n char().    
     disp("(S)uma");
     disp("(R)esta");
-    disp("(M)ultipicación");
-    disp("(D)ivisión");
+    disp("(M)ultipicacion");
+    disp("(D)ivision");
     
     resultado = "";
     opc_valida = "true";
     
     while opc_valida=="true"
-        operacion = input('Escoga la letra de la operación deseada: ','s');
+        operacion = input('Escoga la letra de la operacion deseada: ','s');
         opc_valida="false";     
         switch lower(operacion)
             case 's'
@@ -49,7 +52,7 @@ while seguir_operando=="true"
     elseif lower(aux) == 'n'
         seguir_operando ="false";
     else
-        disp("Ha seleccionado una opción incorrecta.");
+        disp("Ha seleccionado una opcion incorrecta.");
     end
     
 end 
