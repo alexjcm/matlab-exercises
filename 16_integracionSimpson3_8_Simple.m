@@ -11,9 +11,9 @@ formula = 0;
 % formula simpson 3/8 simple
 % f(x)dx = 3h/8 [f(x0) + 3f(x1) + 3f(x2) + f(x3)]
 h = (b - a) / n;
-
 array_fx = [];
 valores_x = a:h:b;
+
 for i = 1:length(valores_x)
     x = valores_x(i);
     if (i == 1 || i == length(valores_x))
