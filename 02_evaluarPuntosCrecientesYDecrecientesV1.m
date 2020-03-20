@@ -58,7 +58,7 @@ if(bool_cre == 0)
     disp(strcat("Es Creciente Hasta " + valor_y));
 end
 if (bool_dec == 0)
-    disp(strcat("Es decreciente Hasta " + valor_y));
+    disp(strcat("Es Decreciente Hasta " + valor_y));
 end
 
 display(resultado_array);
