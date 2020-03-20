@@ -13,8 +13,10 @@ h = (b - a) / n;
 array_fx = [];
 valores_x = a:h:b;
 contador = 0;
+
 for i = 1:length(valores_x)
     x = valores_x(i);
+    
     if (i == 1 || i == length(valores_x))
         formula = formula  + feval('evaluarPolinomioComplejo', x);
         contador = contador + 1;
