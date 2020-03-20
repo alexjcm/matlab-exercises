@@ -8,7 +8,6 @@ array_coeficientes = extraerCoeficientes(grado);
 punto_a = 0;
 punto_b = 1;
 incremento = 0.01;
-
 array_resultado = [];
 array_x = punto_a:incremento:punto_b;
 
