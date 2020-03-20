@@ -7,10 +7,10 @@ array_resultado = [];
 % Formula
 % X(n + 1) = Xn - f(Xn) / f'(Xn)   ;   f'(Xn != 0)
 x0 = 2;
-
 err = 0.001;
 err_abs = 1;
 iteracion = 0;
+
 while err_abs > err
     array_resultado(iteracion+1, 1) = iteracion;
     array_resultado(iteracion+1, 2) = x0;
