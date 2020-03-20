@@ -2,13 +2,8 @@ clc, clear clearvars;
 %% Metodo Adams Moulton, 3 pasos(4to orden) para resolver ecuaciones diferenciales.
 %%
 
-% y0     y inicial
-% y1     calcular con runge4
-% y2     calcular con runge4
-% y3     de aqui en adelante con adams-moulton3
-% ya que: y0=n0, y1=n1, y2=n2
-% pero en este caso usare runge 4 para calcular y0, y1, y2 y a partir de y4
-% se calcular� on adams-moulton de 3 pasos
+% En este caso usaremos runge 4 para calcular y0, y1, y2 y a partir de y4
+% se calculara con adams-moulton de 3 pasos.
 
 func = @(x, y) [y(2);   -3*y(2) + 10*y(1) + 442*cos(3*x)];
 a = 0;
@@ -21,6 +16,8 @@ N = 20;
 [xa4, ya4] = adams_moulton_4_pasos(func, a, b, y0, N);
 
 table(xa3, ya2, ya3, ya4)
+
+
 
 %%
 function [x, y] = adams_moulton_2_pasos(f, a, b, y0, N)
