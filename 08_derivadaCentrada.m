@@ -5,8 +5,6 @@ clc, clear, clearvars;
 % Para compensar los efectos de la d. progresiva y de la regresiva 
 % se puede promediar ambas definiciones obteniendo el operador centrado, es 
 % decir se calcula la d. finita centrada.
-% Esta es mas precisa que las dos anteriores
-% las anteriores entre ambas tienen una precision similar
 
 grado = input('Ingrese grado del polinomio: ');
 array_coeficientes = extraerCoeficientes(grado);
@@ -20,6 +18,7 @@ formula = 0;
 % 5x^4 - 2x^3 + 4x^2 -3x + 28   desde 0 a 4 con h=1 a 0.001
 % 20x^3 - 6^2 + 8x - 3
 array_x = punto_a:incremento:punto_b;
+
 for i = 1 : length(array_x)
     % i es el indice
     valor_y = evaluarPolinomio(array_x(i), array_coeficientes, grado);
