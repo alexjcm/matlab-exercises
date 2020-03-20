@@ -4,7 +4,6 @@ clear, clc, clearvars;
 % Formula
 % P(x) = Y0L0(x) + Y1L1(x) + Y2L2(x) + ... + YnLn(x)
 
-% grado_interpol = input('Ingrese grado de interpolaci�n: '); % 2
 % valores_x = [5 6 7 8];
 % valores_y = [1.023 2.051 3.025 4.036];
 valores_x = [1 5/3 7/3 3];
@@ -14,6 +13,7 @@ punto_x = 2.1; %punto a evaluar
 n = length(valores_x);
 valores_L = [];
 %c = 1:n; % vector para los indices
+
 for i = 1:n
     L = 1; 
     indices = 1:n;
@@ -27,8 +27,7 @@ end
 
 % Multiplicamos el vector  valores_y con el vector L
 Px = valores_L .* valores_y;
-% sumamos dicho vector resultante
-Px = sum(Px);
+Px = sum(Px); % sumamos dicho vector resultante
 disp('Valor de y = ');
 disp(Px);
 
