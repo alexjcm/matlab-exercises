@@ -17,14 +17,17 @@ punto_medios = [];
 alturas = [];
 fx = 0;
 disp("Punto medio");
+
 for i = 1 : length(valores_x) - 1
     x = valores_x(i);
     punto_medios = [punto_medios   (x + aux_medio)];
     alturas = [alturas    feval('evaluarPolinomioComplejo', punto_medios(i))];
     fx = fx + alturas(i);
 end
+
 fx = h * fx;
 disp(fx);
+
 
 disp("Boole");
 % boole
