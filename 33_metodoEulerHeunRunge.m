@@ -2,14 +2,11 @@ clc, clear, clearvars;
 %% Metodo Euler, Heun, Runge-Kutta4 para resolver ecuaciones diferenciales.
 %%
 
-%func = @(x,y) [y(2);    y(3);    2*x-2*y(3)+y(2)-3*y(1)];
 func = @(x, y) [y(2);   -3*y(2) + 10*y(1) + 442*cos(3*x)];
-
-% func = @(x,y) [y(2);   -3*y(2) + 10*y(1) + 442*cos(3*x)]; % funcion anonima
 a = 0; % inicio de intervalo
 b = 5; % b = fin de intervalo
-y0 = [0, 1]; % condicion inicial de y (admite 1, 2 � 3 y iniciales 
-% dependiendo si la funci�n tiene 1era. 2da o 3ra derivada)
+y0 = [0, 1]; % condicion inicial de y (admite 1, 2 o 3 y iniciales 
+% dependiendo si la funcion tiene 1era. 2da o 3ra derivada)
 N = 20; % Numero de subintervalos (iteraciones)
 
 [xe, ye] =  eulerFunc(   func, a, b, y0, N);
@@ -37,7 +34,8 @@ table(xh, ye, yh, yr) % x, heun, euler, runge4
 % plot(xh, yr);
 % hold off
 % legend('ye', 'yh', 'yr');
-% title('M�todos Euler, Heun, Runge4');
+% title('Metodos Euler, Heun, Runge4');
+
 
 %%
 function [x, y] = eulerFunc(f, a, b, y0, N)
@@ -94,7 +92,7 @@ for k = 1:N
     % k4 = f(x(k + 1) , yk + hk3)
     k4 = feval(f, x(k+1), y(k,:)+h*k3)';
     % yk + 1) = yk + (h/6)(k1 + 2k2 + 2k3 + k4)
-    % �
+    % o
     % ysub(k + 1) = yk + (h/6)(k1 + 2k2 + 2k3 + k4)
     y(k+1,:) = y(k,:) + (h/6) * (k1 + 2*k2 + 2*k3 + k4);
     
