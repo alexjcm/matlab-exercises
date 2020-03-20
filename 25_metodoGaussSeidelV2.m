@@ -12,6 +12,7 @@ X = X0;
 iteracion = 1;
 numero_max_iteraciones = 100;
 % Con error de 10^-4 se llega a 21 iteraciones
+
 while error_x >= 0.0001
     for i = 1 : length(A)
         suma_x = 0;
@@ -40,6 +41,7 @@ while error_x >= 0.0001
     iteracion = iteracion + 1;
     
 end
+
 disp(arr_result);
 
 
