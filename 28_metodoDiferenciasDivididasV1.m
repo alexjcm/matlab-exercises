@@ -11,8 +11,10 @@ h = [];
 for i = 2:length(valores_x)
     h = [h   valores_x(i) - valores_x(i - 1)];
 end
+
 disp("Valores de h");
 disp(h);
+
 
 bool_h = 1;
 for i = 2:length(h)
@@ -27,6 +29,7 @@ if(bool_h == 0)
 end
 %%
 
+
 h = h(1);
 s = (punto_x - valores_x(1)) / h;
 % Formula
@@ -38,6 +41,7 @@ valores_D = [];
 D = [];
 D = [D   valores_y(1)];
 % Obtenemos los valores de delta
+
 while (length(valores_y) > 1)
     for i = 2:length(valores_y)
         aux = valores_y(i) - valores_y(i - 1);
