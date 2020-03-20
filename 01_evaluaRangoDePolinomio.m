@@ -12,7 +12,7 @@ array_x = [];
 array_y = [];
 
 for valor_x = punto_a:incremento:punto_b
-    %% Evalua polinomio en el punto j
+    %% Evalua polinomio en el punto valor_x
     valor_y = evaluarPolinomio(valor_x, array_coeficientes, grado);    
     array_x = [array_x valor_x];
     array_y = [array_y valor_y];    
