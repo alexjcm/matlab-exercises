@@ -5,7 +5,6 @@ disp('*****  DERIVACION NUMERICA CON FEVAL() *****')
 punto_a = 0;
 punto_b = 2;
 incremento = 0.1;
-
 array_resultado = [];
 array_x = punto_a:incremento:punto_b;
 
