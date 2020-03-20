@@ -19,10 +19,8 @@ for i = 1 : length(array_x)
     x = array_x(i);
     valor_y = evaluarPolinomio(x, array_coeficientes, grado);
     
-    campo_a = evaluarPolinomio(x, array_coeficientes, grado);
-    campo_a = -3 * campo_a;
-    campo_b = evaluarPolinomio((x + incremento), array_coeficientes, grado);
-    campo_b = 4 * campo_b;
+    campo_a = -3 * evaluarPolinomio(x, array_coeficientes, grado);
+    campo_b = 4 * evaluarPolinomio((x + incremento), array_coeficientes, grado);
     campo_c = evaluarPolinomio((x + (2 * incremento)), array_coeficientes, grado);
     
     formula = (campo_a + campo_b - campo_c) / (2 * incremento);
