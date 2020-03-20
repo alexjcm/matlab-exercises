@@ -28,6 +28,7 @@ for i = 1:length(array_x)
     array_resultado(i, 2) = feval('evaluarPolinomioComplejo', (x));
     
 end
+
 formula = campo01 * formula;
 
 tabla = table(array_resultado(:,1),array_resultado(:,2),'VariableNames', {'x'; 'fx'});
