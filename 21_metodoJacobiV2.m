@@ -1,14 +1,8 @@
 clear, clc;
-%% M�todo iterativo Jacobi, para resolucion de sistemas de ecuaciones
+%% Metodo iterativo Jacobi, para resolucion de sistemas de ecuaciones
 %%
 
 X0 = zeros(1, 4); %En este caso un cero por cada variable independiente
-% A = [4 -1 0 0;
-%     -1 4 -1 0;
-%     0 -1 4 -1;
-%     0 0 -1 4];
-
-%b = [1 1 1 1];
 
 A = [10 -1 2 0;
     -1 11 -1 3;
@@ -16,6 +10,7 @@ A = [10 -1 2 0;
     0 3 -1 8];
 
 b = [6 25 -11 15];
+
 % Ejemplo con diagonal no mayor
 % A = [4 5 0 0;
 %     7 4 -1 0;
@@ -45,8 +40,7 @@ while error > 0.0001
        % end
     end
     % Calculamos el error
-    error = norm(X0 - X); % vector anterior - vector actual 
-    
+    error = norm(X0 - X); % vector anterior - vector actual     
    % X0 = X; % asignamos a X0 el contenido del vector X
     
     if iteracion > 2
