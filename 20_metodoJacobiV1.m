@@ -9,12 +9,6 @@ A = [4 -1 0 0;
 
 b = [1 1 1 1];
 
-% A = [10 -1 2 0;
-%     -1 11 -1 3;
-%     2 -1 10 -1;
-%     0 3 -1 8];
-%
-% b = [6 25 -11 15];
 % Ejemplo con diagonal no mayor
 % A = [4 5 0 0;
 %     7 4 -1 0;
@@ -53,8 +47,7 @@ while Error > 0.0001
     % Calculamos el error OPCION 1
     % Error = norm(X0 - X); % vector anterior - vector actual
     % Calculamos el error OPCION 2
-    Error = abs(((X - X0)/X));
-    
+    Error = abs(((X - X0)/X));    
     X0 = X; % asignamos a X0 el contenido del vector X
     
     if iteracion > 25
