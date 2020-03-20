@@ -15,6 +15,7 @@ N = 20;
 
 table(xa3, ya2, ya3, ya4, ya4v2)
 
+
 %%
 function [x, y] = adams_bashforth_2_pasos(f, a, b, y0, N)
 h= (b - a) / N;
@@ -50,6 +51,7 @@ for k = 1:N
 end
 end
 
+
 function [x, y] = adams_bashforth_3_pasos(f, a, b, y0, N)
 h= (b - a) / N;
 x = a:h:b;
@@ -84,6 +86,7 @@ for k = 1:N
     
 end
 end
+
 
 % adam bashforth-moulton 4
 function [x, y] = adams_bashforth_4_pasos(f, a, b, y0, N)
