@@ -27,7 +27,7 @@ for i = 1:length(array_x)
     end
     
 end
-formula = campo01 * formula;
 
+formula = campo01 * formula;
 disp("Resultado = " +formula);
 
