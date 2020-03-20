@@ -1,4 +1,4 @@
-# Análisis numérico con Matalb
+# Análisis Numérico con MATLAB
 
 ## Implementación de métodos y algoritmos para resolución de derivadas, integrales, ecuaciones diferenciales y sistemas de ecuaciones en MATLAB.
 
