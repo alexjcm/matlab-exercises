@@ -1,5 +1,4 @@
 function resultado = derivadaProgresiva3PuntosV2(incremento, x)
-% DERIVADAPROGRESIVA3PUNTOS Summary of this function goes here
 % formula --->   f'(X0) = (-3*f(X0) + 4*f(X0 + h) - f(x0 + 2h)) / 2h
 
 campo_a = -3 * feval('evaluarPolinomioComplejo', x);

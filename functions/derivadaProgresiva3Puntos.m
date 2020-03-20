@@ -1,5 +1,4 @@
 function resultado = derivadaProgresiva3Puntos(incremento, punto_x, array_coeficientes, grado)
-%DERIVADAPROGRESIVA3PUNTOS Summary of this function goes here
 % formula --->   f'(X0) = (-3*f(X0) + 4*f(X0 + h) - f(x0 + 2h)) / 2h
 
 campo_a = -3 * evaluarPolinomio(punto_x, array_coeficientes, grado);

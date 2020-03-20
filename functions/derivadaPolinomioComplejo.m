@@ -1,5 +1,4 @@
 function resultado = derivadaPolinomioComplejo(x)
-% EVALUARPOLINOMIOESPECIAL Summary of this function goes here
 % Este metodo sirve para un polinomio en un punto recibido como parametro
 
 % ecuacion = cos(2*x) + sin(3*x);

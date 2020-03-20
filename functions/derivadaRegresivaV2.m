@@ -1,5 +1,4 @@
 function resultado = derivadaRegresivaV2(incremento, x)
-%DERIVADAREGRESIVA Summary of this function goes here
 % formula --->   f'(X0) = (f(X0)  - f(X0 - h)) / h
 
 campo01 = feval('evaluarPolinomioComplejo', x);

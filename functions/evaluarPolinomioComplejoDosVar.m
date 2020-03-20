@@ -1,7 +1,6 @@
 function [ecuacion] = evaluarPolinomioComplejoDosVar(x, y)
-% Este metodo sirve para un polinomio en un punto recibido como parametro
-
-% ecuacion = 5*x^4 - 2*x^3 + 4*x^2 -3*x + 28;
+% Este metodo sirve para un polinomio con dos variables o una ecuacion
+% diferencial en un punto recibido como parametro.
 
 %% ecuacion diferencial de tercer grado
 %% x''' + 2x'' - x' + 3x = 2t
