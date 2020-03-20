@@ -11,6 +11,7 @@ formula = 0;
 %  f''(X0) = -f(x0 - 2h) + 16f(x0 - h) - 30f(x0) + 16f(x0 + h) - f(x0 + 2h) / 12*h^2
 
 array_x = punto_a:h:punto_b;
+
 for i = 1 : length(array_x)
     x = array_x(i);
     
