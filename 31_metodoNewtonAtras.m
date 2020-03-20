@@ -1,10 +1,7 @@
 clear, clc, clearvars;
-% Interpolacion Newton hacia adelante
+% Interpolacion Newton hacia atras
 %%
 
-% valores_x = [0.2 0.8 1.4 2 2.6 3.2 3.8];
-% valores_y  =[1.978 10.048 27.622 54.7 91.282 137.368 192.958];
-% punto_x = 1.9; % 49.527
 valores_x = [0.1860 2.7860 5.3860 7.9860 10.5860 13.1860 15.7860];
 valores_y = [1.9718 6.2661 26.5925 73.4964 157.5236 289.2196 479.1299];
 punto_x = 24;
@@ -30,6 +27,7 @@ if(bool_h == 0)
 end
 %%
 
+
 h = h(1);
 s = (punto_x - valores_x(length(valores_x))) / h;
 
@@ -53,6 +51,7 @@ while (length(valores_y) > 1)
 end
 disp("Valores de N =");
 disp(N);
+
 
 % Evaluamos en la formula
 Gx = N(1) + N(2) * s;
