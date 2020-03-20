@@ -1,5 +1,5 @@
 clc, clear, clearvars;
-%% Verifica en que rango de puntos una función es creciente o decreciente
+%% Verifica en que rango de puntos una función es creciente o decreciente.
 %%
 
 grado = input('Ingrese grado del polinomio: ');
