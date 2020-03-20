@@ -4,27 +4,14 @@ clear, clc;
 
 % Matriz aumentada que representa un sistema de ecuaciones lineales
 % donde los valores que van luego del igual estan en la ultima columna
-% A = [2 -1 1 2;
-%     3 1 -2 9;
-%     -1 2 5 -5];
-
-% A = [2 6 1 7;
-%     1 2 -1 -1;
-%     5 7 -4 9];
-
-% A = [2 -3 0 8;
-%     4 -5 1 15;
-%     2 0 4 1];
-
 A = [2 -1 0 0 0;
     -1 2 -1 0 0;
     0 -1 2 -1 0;
     0 0 -1 2 5];
 
-
-
 % Obtenemos el numero de filas y columnas de la matriz
 [num_filas, num_col] = size(A);
+
 for i = 1 : num_filas-1
      % Realizamos el pivoteo
     for j = 2 : num_filas
@@ -46,10 +33,11 @@ for i = num_filas : -1:2
     end
 end
 
-% Iniciaizamos con ceros un vector el cual contendra la sol. a cada
-% variable
+
+% Iniciaizamos con ceros un vector el cual contendra la sol. a cada variable
 soluciones = zeros(1, num_filas);
 % Convertimos los elementos de la diagonal principal en unos
+
 for i = 1 : num_filas
     A(i,:) = A(i,:) / A(i,i);
     soluciones(i) = A(i,num_col);
